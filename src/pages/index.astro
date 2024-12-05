@@ -1,11 +1,22 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "~/layouts/Layout.astro";
 ---
 
 <Layout>
-	<Welcome />
+  <div class="min-h-screen flex items-center justify-center flex-col gap-6 p-8">
+    <h1
+      class="text-6xl font-extrabold tracking-tighter bg-gradient-to-r from-green-400 to-emerald-600 bg-clip-text text-transparent py-1"
+    >
+      Let's Go Gambling
+    </h1>
+    <p class="text-xl text-gray-600 dark:text-gray-300">
+      I can't stop winning 🤑🤑🤑
+    </p>
+
+    <img
+      src="https://external-preview.redd.it/lets-go-gambling-v0-YXU5MnEzaG05ZDRkMSGIS4axUWZowLVnCd8thNMr3b_1nRsetyv3AsS-Vryz.png?format=pjpg&auto=webp&s=9a12e70e472eb0eeccab7dc7f1e61ed414750dd7"
+      alt="gambling"
+      class="rounded-lg shadow-xl max-w-md w-full hover:scale-105 transition-transform"
+    />
+  </div>
 </Layout>
